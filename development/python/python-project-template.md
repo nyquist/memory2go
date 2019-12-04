@@ -110,9 +110,12 @@ git push --no-verify
 ```
 
 References
-pipx: https://pipxproject.github.io/pipx/
-pipenv: https://github.com/pypa/pipenv
-black: https://github.com/psf/black
-flake8: https://pypi.org/project/flake8/
-mypy: http://mypy-lang.org/
+- pipx: https://pipxproject.github.io/pipx/
+- pipenv: https://github.com/pypa/pipenv
+- black: https://github.com/psf/black
+- flake8: https://pypi.org/project/flake8/
+- mypy: http://mypy-lang.org/
+
+https://github.com/sourceryai/python-best-practices-cookiecutter
+
 
