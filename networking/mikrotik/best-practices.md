@@ -24,6 +24,10 @@
 ```/system package update check-for-updates```
 ## Run package updates and reboot if needed
 ```/system package update upgrade```
+## Script for auto-updating routeros letsencrypt certificate
+https://github.com/Neilpang/acme.sh/blob/master/deploy/routeros.sh
+
+
     
 ### Inspired by
 * https://www.reddit.com/r/mikrotik/comments/2sm48h/ansible_playbook/
