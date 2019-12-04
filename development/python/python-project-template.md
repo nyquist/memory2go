@@ -115,6 +115,7 @@ References
 - black: https://github.com/psf/black
 - flake8: https://pypi.org/project/flake8/
 - mypy: http://mypy-lang.org/
+- pytest: https://docs.pytest.org/en/latest/
 
 https://github.com/sourceryai/python-best-practices-cookiecutter
 
