@@ -7,9 +7,10 @@
 - [OCI Connectivity](OCI-Connectivity.md)
 - [OCI Load Balancers](OCI-LoadBalancing.md)
 - [OCI Compute](OCI-Compute.md)
-- [OCI Block Storage](OCI-BlockStorage.md)
-- [OCI Object Storage](OCI-ObjectStorage.md)
-- [OCI File Storage](OCI-FileStorage.md)
+- [OCI Storage](OCI-Storage.md)
+  - [OCI Block Storage](OCI-BlockStorage.md)
+  - [OCI Object Storage](OCI-ObjectStorage.md)
+  - [OCI File Storage](OCI-FileStorage.md)
 - [OCI Key Management](OCI-KeyManagement.md)
 
 ## Docs
