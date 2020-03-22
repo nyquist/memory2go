@@ -1,16 +1,16 @@
 # oci-notes
 
 ## Table of contents
-- [OCI 101](https://github.com/nyquist/oci-notes/blob/master/OCI-101.md)
-- [OCI IAM](https://github.com/nyquist/oci-notes/blob/master/OCI-IAM.md)
-- [OCI VCN](https://github.com/nyquist/oci-notes/blob/master/OCI-VCN.md)
-- [OCI Connectivity](https://github.com/nyquist/oci-notes/blob/master/OCI-Connectivity.md)
-- [OCI Load Balancers](https://github.com/nyquist/oci-notes/blob/master/OCI-LoadBalancing.md)
-- [OCI Compute](https://github.com/nyquist/oci-notes/blob/master/OCI-Compute.md)
-- [OCI Block Storage](https://github.com/nyquist/oci-notes/blob/master/OCI-BlockStorage.md)
-- [OCI Object Storage](https://github.com/nyquist/oci-notes/blob/master/OCI-ObjectStorage.md)
-- [OCI File Storage](https://github.com/nyquist/oci-notes/blob/master/OCI-FileStorage.md)
-- [OCI Key Management](https://github.com/nyquist/oci-notes/blob/master/OCI-KeyManagement.md)
+- [OCI 101](OCI-101.md)
+- [OCI IAM](OCI-IAM.md)
+- [OCI VCN](OCI-VCN.md)
+- [OCI Connectivity](OCI-Connectivity.md)
+- [OCI Load Balancers](OCI-LoadBalancing.md)
+- [OCI Compute](OCI-Compute.md)
+- [OCI Block Storage](OCI-BlockStorage.md)
+- [OCI Object Storage](OCI-ObjectStorage.md)
+- [OCI File Storage](OCI-FileStorage.md)
+- [OCI Key Management](OCI-KeyManagement.md)
 
 ## Docs
 - [OCI Foundation Training](https://cloud.oracle.com/en_US/iaas/training/foundation)
