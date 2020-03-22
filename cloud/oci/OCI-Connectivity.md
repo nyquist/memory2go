@@ -12,9 +12,21 @@
 #### OCI Managed VPN Service
 - No SLA
 - Expect ~250Mbps
-- A CPE object is created where the on-prem router is added
-- The DRG Creates an IPSect Connection between CPE and DRG
-- Static routing
+- Only IPSec Tunnel mode is supported
+- A CPE object needs to be created in order to define the tunnel endpoint. The CPE object is a virtual representation of your actual on-prem CPE
+- An IPSec Connection between CPE and DRG is created and the DRG must be attached to the VCN.
+- Routing options:
+  - Static
+  - Dynamic: BGP
+
+Steps to create:
+1. Create VCN
+2. Create DRG
+3. Attach DRG to VCN
+4. Update VCN Route Table to route traffic to on-prem via DRG
+5. Create CPE Object
+6. From DRG, Create an IPSec Connection between CEP and DRG and provide static routes or BGP configuration
+7. Configure on-prem CPE device
 
 ### FastConnect
 - Uses private dedicated connectivity
