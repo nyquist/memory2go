@@ -13,8 +13,8 @@
   - [OCI File Storage](OCI-FileStorage.md)
 - [OCI Key Management](OCI-KeyManagement.md)
 - OCI Database Offerings
- - [OCI DB Systems](OCI-DB.md)
- - [OCI Autonomous DB](OCI-AutonomousDB.md)
+  - [OCI DB Systems](OCI-DB.md)
+  - [OCI Autonomous DB](OCI-AutonomousDB.md)
 
 ## Docs
 - [OCI Foundation Training](https://cloud.oracle.com/en_US/iaas/training/foundation)
