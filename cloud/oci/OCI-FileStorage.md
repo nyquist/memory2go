@@ -7,7 +7,7 @@
 - FSS uses Full POSIX semantics
 - Data at REST is encrypted for all filesystems and metadata using 128bit keys
 - Up to 10000 snapshots can be executed per file system
-- Up to 100 file systems and 2 mount targets per AD per account (soft limit) can be configured.\
+- Up to 100 file systems and 2 mount targets per AD per account (soft limit) can be configured.
 
 ## Mount Targets
 - The mount target is a NFS endpoint that lives in your subnet of choice.
@@ -19,7 +19,7 @@
 
 ## File Systems
 - To access your file system you create a new or use an existing mount target.
-- Up to 100 fule systems/ mount target can be created
+- Up to 100 file systems cab be created per mount target.
 - The file systems will reside in the AD where FSS is configured (based on subnet assignment) but it can be accessible from on-prem through FastConnect/VPN.
 
 ## Export Paths
@@ -34,12 +34,12 @@
  The service is prottected by several layers:
  1. **IAM Service** - groups should be allowed to access or manage the service
  2. **Security Lists**: 
-   - In the subnet where the service is attached the following ingress rules should be allowed: Stateful ingress: TCP/111, 2048-2050 and UDP/111,2048
-   - A similar rule should allow egress traffic to the service on the above ports from the subnets where connections to this service are expected.
+    - In the subnet where the service is attached the following ingress rules should be allowed: Stateful ingress: TCP/111, 2048-2050 and UDP/111,2048
+    - A similar rule should allow egress traffic to the service on the above ports from the subnets where connections to this service are expected.
  3. **Export Options**
-   - controls how NFS clients access the file system. Information is stored in an export includes the file system OCID, export path and client access options.
-   - By default, it allows full access to all NFS clients. {"source": "0.0.0.0/0", "Privileged Source Port":"False", "Access":"Read_Write", "Identity Squash":"None"}
-   - The defaults can be altered only using a RESTI API call for now.
+    - controls how NFS clients access the file system. Information is stored in an export includes the file system OCID, export path and client access options.
+    - By default, it allows full access to all NFS clients. {"source": "0.0.0.0/0", "Privileged Source Port":"False", "Access":"Read_Write", "Identity Squash":"None"}
+    - The defaults can be altered only using a RESTI API call for now.
  4. **NFS v.3 Unix Security**
  
  ## Mounting OCI File Systems
