@@ -67,7 +67,7 @@ The default size of the boot volume can be increased but you have to extend the 
 - You can preserve the boot volume when you terminate a compute instance.
 - Boot volumes are only terminated when you manually delete them.
 - Boot volumes can't be deleted from a running instance
-- Boot volumes can be balanced up manually using a backup policy or you can clone them. 
+- Boot volumes can be backed up manually using a backup policy or you can clone them. 
 ## AutoScaling
 ### Instance Configuration
 An instance configuration contains an OS image, metadata, shape and related resources as a single configuration entity so you can reuse it to create similar instances.
