@@ -2,7 +2,7 @@
 
 Object Storage features:
  - Storage consistency = always serve the most recent copy of the data.
- - Highly Durable = Data is stroed redundantly acrross multiple ADs. Data integrity is monitored and auto-repaired
+ - Highly Durable = Data is stored redundantly acrross multiple ADs. Data integrity is monitored and auto-repaired
  - Object size can be up to 10 TB
  - Data is stored as objects.
  - Encryption: Data is encrypted at rest and while in transit.
