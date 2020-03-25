@@ -33,8 +33,8 @@ Terraform Links: https://www.terraform.io/docs/providers/oci/r/load_balancer_loa
 ### Private Load Balancer
 
 - Depending on the subnet it runs it, it can be
- - Regional
- - AD specific
+  - Regional
+  - AD specific
 - Primary and Standby each acquire a private IP
 
 ## Load Balancer Components
