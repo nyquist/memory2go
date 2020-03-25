@@ -11,7 +11,7 @@
 | Serverless or Dedicated               | ExaCS or DBCS |
 
 - Oracle manages end-to-end the Autonomous DB.
-  - Provisioining, Patching, Upgrades, Backup, recovery, Growing/Shrining storage dand compute
+  - Provisioining, Patching, Upgrades, Backup, recovery, Growing/Shrining storage and compute
 - Can be managed using service console, CLI or REST API
 - Fully elastic
   - supoprts auto-scaling
@@ -24,7 +24,7 @@
 | --- | --- |
 | Columnar Format | Row Format |
 | Creates Data Summaries | Creates indexes |
-| Memory Speeds Joins, Aggs | Memory for Cahching to Avoid IO |
+| Memory Speeds Joins, Aggs | Memory for Caching to Avoid IO |
 | Statistics updated in real-time while preventing plan regression | Statistics updated in real-time while preventing plan regression |
 
 ## Choice of Cloud Deployments
@@ -32,7 +32,7 @@ Autonomous Database Deployments:
 - Dedicated: provisions Autonomous DB in its own Exadata
 - Serverless: provisions Autonomous DB on a Shared Exadata
 
-| DBaaS on VM or BM | Exadata | Autonmous Serverless | Autonomous Dedicated |
+| DBaaS on VM or BM | Exadata | Autonomous Serverless | Autonomous Dedicated |
 | --- | --- | --- | --- |
 | Management | Customer | Customer | Oracle | Oracle |
 | Private Network | Yes | Yes | No | Yes |
