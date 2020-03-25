@@ -33,8 +33,8 @@
   - Active Data Guard
   
 ## DB Lifecycle operations
-- Launch and status checl
-- Start, Stop, reboot
+- Launch and status check
+- Start, Stop, Reboot
   - Billing continues in STOP stage for BM DB systems, but not for VM DB systems
 - Scale 
   - Scale CPU cores
