@@ -97,3 +97,19 @@ iptables -I CHAIN MATCH -j TARGET [OPTIONS]
 - to remove a rule:
 iptables -D CHAIN MATCH -j TARGET [OPTIONS]
 ```
+
+To list the contents of the table:
+```
+iptables -L [-v]
+```
+
+To list the contents of the table in iptable commands:
+```
+iptables -S
+```
+
+
+All iptables changes are ephemeral and they are lost on reload. To save them, use:
+```
+iptables -S
+```
