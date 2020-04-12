@@ -117,6 +117,6 @@ iptables -Z
 
 All iptables changes are ephemeral and they are lost on reload. To save them, use:
 ```
-iptables -S
+iptables-save
 ```
 
