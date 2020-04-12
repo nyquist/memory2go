@@ -102,3 +102,15 @@ ln [OPTIONS] SRC [LINKNAME]
 	 - **/usr/share** = usually hods man and info pages but it was historically used to share files with other unix machines.
  - **/var** = system logging, user tracking, caches, etc.
  - **/vmlinuz** = Holds the kernel, but usually linked to /boot/vmlinuz
+
+
+# Access Control Mechanisms
+## DAC (Discretionary Access Control) - Standard Linux
+Users, Groups, Permissions
+## MAC (Mandatory Access Control) - SELinux
+- Labels resources for more granular access control.
+- Separte system from DAC
+- Operating states for SELinux:
+  - enforcing = enforces SELinux policies
+  - permissive = only logs policy exceptions to /var/log/audit/audit_log
+
