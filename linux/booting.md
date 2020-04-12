@@ -5,15 +5,25 @@
 ## GRUB
 `/boot/grub/menu.lst`
 
-# The boot process
+# The Boot process
+## User space startup sequence
+
+**init** processes:
+ - **System V** - a traditional sequenced init. Configure it in `/etc/inititab`
+ -  **systemd** - emerging standard for init. Configure it in `/etc/systemd`
+ - **upstart** - used by Ubuntu in the past. Confgure it in `/etc/init`
 
 `dmesg` - see kernel ring buffer - includes messages seen at boot
 `/var/log/dmesg` - dmesg log
 `/var/log/boot` - boot messages form syslogd
 
-Power -> Bios ->Boot Loader -> Kernel -> init (/sbin/init): pid 1 -> read `/etc/inittab` or `etc/systemd/system/default.target` where systemd is used
+Power -> Bios ->Boot Loader -> Kernel -> init (/sbin/init): pid 1 -> read init process config.
 
-# Runlevels
+### systemd
+See https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files
+
+### SystemV
+#### Runlevels
 0 - SHUTDOWN - transitional. Used to shift the system from one state to another. 
 1, s, S - SINGLE USER 
 2 - On Debian it is a full multi-user with X and graphical login.  Other distributions leave it undefined
@@ -24,8 +34,9 @@ Power -> Bios ->Boot Loader -> Kernel -> init (/sbin/init): pid 1 -> read `/etc/
 
 `runlevel` - print previous and current runlevel
 
-`init LEVEL` - changes runlevel. Whgere systemd is used a similar but not quite equivalent command would be `systemctl enable TARGET`
+`init LEVEL` - changes runlevel. 
 
+## Shutdown
 `shutdown [OPTIONS] [WALL]` - sends the WALL message to all users who are logged into your system and prevents other users from logging in during the process of changing runlevels
 
 ```
