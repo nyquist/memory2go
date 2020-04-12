@@ -17,3 +17,8 @@ If the object is still not deleted, and gets reassigned the same value, the vari
 ```
 del n - removes object from memory
 ```
+- Class: Upercase
+- functions: camelCase
+- vars: lower_case
+
+A module is a file that has .py extension. When a module is loaded, it searches for that file in current directory then on the path. It then compiles that module into bytecode (.pyc)
