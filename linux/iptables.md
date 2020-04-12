@@ -35,8 +35,8 @@ iptables -X CHAIN_TO_DELETE
 
 ## Tables
 There is a list of tables that are used in each chain. These tables hold rules that apply in the chain. iptables comes with 5 *tables* of rules:
-- RAW: Allows you to work with packets before they are tracked. Packets marked with "NOTRACK" will skip the connection trakcing table.
-- connection tracking: Packet manipulation is based on the state of the connection:
+- RAW: Allows you to work with packets before they are tracked. Packets marked with "NOTRACK" will skip the connection tracking table. RAW table can be manipulated only in PREROUTING and OUTPUT chains.
+- Connection Tracking: Packet manipulation is based on the state of the connection. Connection tracking is verified only in PREROUTING and OUTPUT chains. The following states are used:
   - NEW: when a new packet that is not associated with an existing connection enters the chain
   - ESTABLISHED - a connection is established when a response is seen in the opposite direction. This works for UDP, ICMP and TCP(only if the response is SYN/ACK)
   - RELATED: packets that are not part of an existing connection but are associated with an existing connection (Like ICMP responses to connection attempts)
@@ -44,10 +44,10 @@ There is a list of tables that are used in each chain. These tables hold rules t
   - UNTRACKED: if marked with NOTRACK at the RAW table
   - SNAT: used to track packets associated with SNAT
   - DNAT: used to track packets associated with a DNAT
-- MANGLE: alter packet headers
-- NAT: performs network address translation
-- FILTER: for basic filtering
-- SECURITY: only used for systems that have SELinux installed
+- MANGLE: alter packet headers. This is available in all chains: PREROUTING, INPUT, FORWARD, OUTPUT, POSTROUTING
+- NAT: performs network address translation. DNAT is available in PREORUTING and OUTPUT chains. SNAT is available in INPUT and POSTROUTING chains
+- FILTER: for basic filtering. It is available only in INPUT, FORWARD and OUTPUT chains.
+- SECURITY: only used for systems that have SELinux installed. It is available only where FILTER is available: INPUT, FORWARD and OUTPUT chains.
 
 
 
@@ -78,38 +78,45 @@ To set a target use:
 Target options:
 - RETURN: will cause the current packet to stop traveling through the chain
 - ACCEPT: will accept the current packet and will not continue traversing the current chain. It will still go through other chains.
-- DNAT : only available in PREROUTING adn OUTPUT
-- SNAT : only available in POSTROUTING
+- DNAT : only available in PREROUTING and OUTPUT. You need to add `--to-destination ADDRESS[:PORT]`
+- SNAT : only available in POSTROUTING and INPUT. You need to add `--to-source ADDRESS`
 - DROP : drops the packet
 - REJECT : drops but sends a reponse back (ICMP). Vali in INPUT, FORWARD and OUTPUT.
 - LOG : adds to kernel log.
 - ULOG : packet info is mulitcasted together with the whole packet through a netlink socket
 - MARK : only valid in MANGLE.
-- MASQUERADE : similar to SNAT but used on a outbound network interface when the outbound IP can change
+- MASQUERADE : similar to SNAT but used on a outbound network interface when the outbound IP can change. While SNAT requires you to provide an address, MASQUERADE will automatically use the interface address. Only available in POSTROUTING
 - REDIRECT : redirects packets and streams to the machine itself. Valid in PREROUTING and OUTPUT chains
 
-to work with rules:
+To add/remove rules, use:
 ```
 - to append to the table:
 iptables -A CHAIN MATCH -j TARGET [OPTIONS]
 - to insert at the beginnning of the table:
 iptables -I CHAIN MATCH -j TARGET [OPTIONS]
-- to remove a rule:
-iptables -D CHAIN MATCH -j TARGET [OPTIONS]
+- to remove a rule through matching or by number:
+iptables -D CHAIN {MATCH -j TARGET [OPTIONS]|NUMBER}
+
+```
+To list the rules
+```
+iptables -L [CHAIN] [-v] [--line-numbers]
+```
+To list the rules as iptable commands:
+```
+iptables -S [CHAIN]
 ```
 
-To list the contents of the table:
+To remove all rules, use these commands
 ```
-iptables -L [-v]
+- flush and remove all iptables rules 
+iptables -F
+- reset all counters and connection tracking in iptables (zero)
+iptables -Z
 ```
-
-To list the contents of the table in iptable commands:
-```
-iptables -S
-```
-
 
 All iptables changes are ephemeral and they are lost on reload. To save them, use:
 ```
 iptables -S
 ```
+
