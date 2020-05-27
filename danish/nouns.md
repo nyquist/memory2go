@@ -9,29 +9,20 @@
 
 ## Definite Article
 
-- **-[e]n** postfix - for Common (n-words): `manden = the man`
-- **-[e]t** postfix - fro Neuter (t-words): `vandet = the water`
-if the noun already ends with -e, only the `t` or `n` is added: `et æble --> æblet` (an apple --> the apple)
+- **-en** postfix - for Common (n-words): `en mand (a man) --> manden (the man)`
+- **-et** postfix - fro Neuter (t-words): `vand (water) --> vandet (the water)`, `et æble (an apple) --> æblet (the apple)`
+- if the noun already ends with -e, only the `t` or `n` is added: `et æble (an apple) --> æblet (the apple)`
 
-# Pronouns
-| english | Danish | 
-| --- | --- |
-| I   | jeg |
-| you | du  |
-| he, she, it| han, hun, den/det|
-| we  | vi  |
-| you | I   |
-| they | de |
+## Plural
+- **er**: `en avis --> aviser`, `en dreng --> drenge`
+- if the noun alredy ends with -e, on;y the `r` is added: `en pige (a girl) --> piger (gilrs)`
+- Nouns containing multiple syllables usually take -er ending
+- Single syllabic words of the common gender (n-words) often use the -e ending
+- Short, single syllabic words of the neuter gender (t-wors) are most likely to remain unchanged in the plural
 
-# Verbs
-## Present Tense
-- ends in `-r` and doesn't change regarding to the person carrying the action.
+### Plural definit article
+- **ne** postfix to the plural form: `en kvinde (a woman) --> kvider (women) --> kvinderne (the women)`, `en dreng (a boy) --> drenge (boys) --> drengene (the boys)`
 
-| english | Danish | 
-| --- | --- |
-| `I eat`  | `jeg spiser`|
-| `you eat` | `du spiser` |
-| `he, she, it eats` | `han, hun, den/det spiser` |
-| `we eat` | `vi spiser` |
-| `you eat`| `I spiser` |
-| `they eat` | `de spiser` |
+### Iregular:
+- `en mand (a man) --> mænd (men) --> mændene (the men)`
+
