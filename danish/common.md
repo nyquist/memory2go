@@ -6,5 +6,5 @@
 - `goddag` = good day
 - `godnat` = good night
 - `god formiddag` = between moning and nood
-- `god egermiddag` = good afternoon
+- `god eftermiddag` = good afternoon
 
