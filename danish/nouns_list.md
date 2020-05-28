@@ -1,0 +1,11 @@
+`jord` = ground
+`bær` = berry
+`jordbær` = strawberry
+`svin` = pig, swine
+`kød` = meat
+`svinkød` = pig meat (pork)
+`morgen` = morning
+'mad` = food
+`moregenmad` = breakfast
+`aften` = evening
+`afetensmad` = dinner, supper
