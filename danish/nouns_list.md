@@ -9,3 +9,5 @@
 - `moregenmad` = breakfast
 - `aften` = evening
 - `afetensmad` = dinner, supper
+- `kat --> en kat --> katten` = cat, a cat, the cat
+- `hund --> en hund --> hunden` = dog, a dog, the dog
