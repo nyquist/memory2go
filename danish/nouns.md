@@ -26,3 +26,8 @@
 ### Iregular:
 - `en mand (a man) --> mænd (men) --> mændene (the men)`
 
+## Genitive case
+adds `-s` to the end.
+Kvindens æble = a women's apple
+
+
