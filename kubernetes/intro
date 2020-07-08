@@ -1,0 +1,9 @@
+Kubernetes clusters contains 2 types of resources:
+- **Master**: coordinates the cluster: scheduling applications, maintaining desired state, scaling, rolling updates
+- **Nodes**: is a VM or Physical computer that servers as a worker machine in a cluster.
+  - Each node has a **Kubelet** which is an agent for managing the node and communicating with the master
+  - The node should also have tools for handling containers (docker or rkt)
+  - A production cluster should have a minimum of 3 nodes (why?)
+  
+When deploying an application to Kubernetes you tell the master to start the application containers. 
+Communication between Master and Nodes is done via Kubernetes API which the master exposes. End users can also interract with the cluster via the API.
