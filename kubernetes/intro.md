@@ -14,3 +14,7 @@ After application instances are created, a **Kubernetes Deployment Controller** 
 Pods that are running inside Kubernetes are running on a private, isolated network. By default they are running on a private, isolated network and are visible by default only from other pods and services withing the same cluster.
 
 You can use `kubectl proxy` to create a proxy to access the pods on the isolated network.
+
+A Pod is a group of one or more application containers and some shared resources for those containers.(volumes, networking, information about how to run containers: image, ports). Pods are atomic units. A deployment creates Pods with containers inside them. Each Pod is tied to the node where it created. In case of Node failure, identical Pods are scheduled on other Nodes.
+
+A Pod always runs on a Node. Each Node is managed by the Master.  Every Kubernetes Node runs Kubelet (for communication to the master) and a container runtime (Docker).
