@@ -22,7 +22,7 @@ QinQ is used between SP and MSEE
 - Goes up to 10 Gbps (active/active. Potentially can get to 20Gbps)
 - Doesn't support MACSEC?
 
-##ExpressRoute Direct
+## ExpressRoute Direct
 - Still needs to happen in a colo
 - Supports MACSEC
 - Customer can chose between QinQ and 802.1q
