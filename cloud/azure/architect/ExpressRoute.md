@@ -42,5 +42,8 @@ You still need to define
 - Gateway is still required because it maintains BGP sessions.
 
 
-
+## Peering
+- Private - to access Customer Private resources in Azure
+- Public (not available anymore. Merged into Microsoft Peering) - to access Azure Public Services
+- Microsoft Peering - to access any Microsoft Public Services(like Office365) but now includes Azure Public Services.
 
