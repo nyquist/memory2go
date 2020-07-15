@@ -20,9 +20,16 @@ VPNGw sizes:
 
 
 Required resources:
-- VNET
-- GatewaySubnet of at least /27
-- Public IP Address (Basic-SKU). Dynamic but it won't change
-- Local Network Gateway
-- Virtual Network Gateway
-- Connection
+- In Azure:
+    - VNET
+    - GatewaySubnet of at least /27
+    - Public IP Address (Basic-SKU). Dynamic but it won't change
+    - Local Network Gateway
+    - Virtual Network Gateway
+    - Connection
+- On Prem:
+  - A VPN device
+  - internet routable IPv4 Addresses
+  
+HA
+- by default the Gateway is deployed as a 2 instances in an active/standby config but only the active one is visible.
