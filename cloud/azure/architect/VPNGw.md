@@ -33,3 +33,7 @@ Required resources:
   
 HA
 - by default the Gateway is deployed as a 2 instances in an active/standby config but only the active one is visible.
+- Active/active is also possible
+
+VPN Gateway can act as a failover for ExpressRoute
+
