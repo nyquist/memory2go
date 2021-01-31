@@ -3,28 +3,28 @@
 - Common (n-words): take **en** as indefinite article (80% of nouns)
 - Neuter (t-words): take **et** as indefinite article
 
-## Indefinite article
-- **en** before - for Common (n-words): `en mand = a man`
-- **et** before - for Neuter (t-words):
 
-## Definite Article
+Singular Indefinite [_si_] | Singular Definite | Plural indefinite [_pi_] | Plural Definite| Translation |
+--|--|--|--|--|
+**en** _si_ | _si_**en**| _si_**er**, _si_**r**, _si_**er**, _si_ | _pi_**ne** | |
+**et** _si_ | _si_**et**| _si_**er**, _si_**r**, _si_**er**, _si_ | _pi_**ne** | |
+| en avis | avisen | aviser | aviserne  | a newspaper |
+| en dreng | drengen | drenge | derngene | a boy|
+| en mand | manden| mænd | mændene| a man|
+| en kvinde | kvinden | kvinder | kvinderne | a woman |
+| en pige | pigen  | piger  | pigerne   | a girl
 
-- **-en** postfix - for Common (n-words): `en mand (a man) --> manden (the man)`
-- **-et** postfix - fro Neuter (t-words): `vand (water) --> vandet (the water)`, `et æble (an apple) --> æblet (the apple)`
-- if the noun already ends with -e, only the `t` or `n` is added: `et æble (an apple) --> æblet (the apple)`
 
-## Plural
-- **er**: `en avis --> aviser`, `en dreng --> drenge`
-- if the noun alredy ends with -e, on;y the `r` is added: `en pige (a girl) --> piger (gilrs)`
+
+Singular Definite: 
+- if the _si_ already ends with "e", only "r" or "t" is added for singular definite form
+
+Plural Indefinite:
+- if the noun alredy ends with -e, only the `r` is added: `en pige (a girl) --> piger (gilrs)`
 - Nouns containing multiple syllables usually take -er ending
 - Single syllabic words of the common gender (n-words) often use the -e ending
 - Short, single syllabic words of the neuter gender (t-wors) are most likely to remain unchanged in the plural
 
-### Plural definit article
-- **ne** postfix to the plural form: `en kvinde (a woman) --> kvider (women) --> kvinderne (the women)`, `en dreng (a boy) --> drenge (boys) --> drengene (the boys)`
-
-### Iregular:
-- `en mand (a man) --> mænd (men) --> mændene (the men)`
 
 ## Genitive case
 adds `-s` to the end.
