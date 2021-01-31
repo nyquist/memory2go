@@ -9,6 +9,9 @@ Singular Indefinite [_si_] | Singular Definite | Plural indefinite [_pi_] | Plur
 **en** _si_ | _si_**en**| _si_**er**, _si_**r**, _si_**er**, _si_ | _pi_**ne** | |
 **et** _si_ | _si_**et**| _si_**er**, _si_**r**, _si_**er**, _si_ | _pi_**ne** | |
 | en avis | avisen | aviser | aviserne  | a newspaper |
+| en bil  | bilen | biler | bilerne | a car |
+| en bror | broren| brødre | brørene| a brother|
+| en by | byen| byer| byerne | a town|
 | en dreng | drengen | drenge | derngene | a boy|
 | en mand | manden| mænd | mændene| a man|
 | en kvinde | kvinden | kvinder | kvinderne | a woman |
