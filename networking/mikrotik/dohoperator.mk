@@ -1,5 +1,5 @@
 ## Enables or disables doh on errors
-## /ip 
+
 
 :local disableMsg "Disabling DoH";
 :local enableMsg "Enabling DoH";
